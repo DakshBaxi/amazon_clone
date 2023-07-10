@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/amazonicon.png">
+</head>
+    <body >
+    <header>
+  <div class="nav-belt">
+    <!-- logo -->
+<a href="#">
+    <div  class="logo">
+        <img src="images/amazon_logo.png" class="image">
+    </div>
+</a>
+<!-- deliver -->
+   
+    <div class="deliver">
+        <div class="mapicon"> 
+           <i class="fa-solid fa-location-dot" style="color: #f5fcf9;"></i>
+        </div>
+        <div class="del">
+           <p>Deliver to Daksh</p>
+           <h4>INDIA </h4>   
+        </div>
+   
+  
+</div>
+    <!-- searchbar -->
+    <div class="search">
+    
+     
+         
+            <select class="selectbar" id="">
+              <option value="">All</option>
+              <option value="">cat</option>
+              <option value="">dog</option>
+          </select>
+         
+        <div class="searchbar">
+        <input type="text" class="inputsearch" placeholder="Search amazon">
+        </div>
+   
+       
+            <div class="searchButton" onclick="done()">
+                <i class="fa-solid fa-magnifying-glass searchicon"></i>
+            </div>
+       
+    </div>
+   <div class="language">
+        <svg class="flag" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" zoomAndPan="magnify" viewBox="0 0 30 30.000001" height="40" preserveAspectRatio="xMidYMid meet" version="1.0"><defs><clipPath id="id1"><path d="M 2.371094 18 L 27.773438 18 L 27.773438 23.921875 L 2.371094 23.921875 Z M 2.371094 18 " clip-rule="nonzero"/></clipPath><clipPath id="id2"><path d="M 2.371094 10 L 27.773438 10 L 27.773438 19 L 2.371094 19 Z M 2.371094 10 " clip-rule="nonzero"/></clipPath><clipPath id="id3"><path d="M 2.371094 5.050781 L 27.773438 5.050781 L 27.773438 11 L 2.371094 11 Z M 2.371094 5.050781 " clip-rule="nonzero"/></clipPath></defs><g clip-path="url(#id1)"><path fill="rgb(7.449341%, 53.329468%, 3.138733%)" d="M 2.375 21.019531 C 2.375 22.625 3.640625 23.921875 5.199219 23.921875 L 24.945312 23.921875 C 26.503906 23.921875 27.769531 22.625 27.769531 21.019531 L 27.769531 18.117188 L 2.375 18.117188 Z M 2.375 21.019531 " fill-opacity="1" fill-rule="nonzero"/></g><g clip-path="url(#id2)"><path fill="rgb(93.328857%, 93.328857%, 93.328857%)" d="M 2.375 10.859375 L 27.769531 10.859375 L 27.769531 18.117188 L 2.375 18.117188 Z M 2.375 10.859375 " fill-opacity="1" fill-rule="nonzero"/></g><g clip-path="url(#id3)"><path fill="rgb(100%, 59.999084%, 19.999695%)" d="M 27.769531 10.859375 L 27.769531 7.957031 C 27.769531 6.351562 26.503906 5.050781 24.945312 5.050781 L 5.199219 5.050781 C 3.640625 5.050781 2.375 6.351562 2.375 7.957031 L 2.375 10.859375 Z M 27.769531 10.859375 " fill-opacity="1" fill-rule="nonzero"/></g><path fill="rgb(0%, 0%, 50.19989%)" d="M 17.894531 14.488281 C 17.894531 14.871094 17.820312 15.242188 17.679688 15.597656 C 17.535156 15.953125 17.332031 16.269531 17.066406 16.539062 C 16.804688 16.8125 16.496094 17.023438 16.152344 17.167969 C 15.804688 17.316406 15.445312 17.390625 15.074219 17.390625 C 14.699219 17.390625 14.339844 17.316406 13.992188 17.167969 C 13.648438 17.023438 13.34375 16.8125 13.078125 16.539062 C 12.8125 16.269531 12.609375 15.953125 12.464844 15.597656 C 12.324219 15.242188 12.25 14.871094 12.25 14.488281 C 12.25 14.101562 12.324219 13.730469 12.464844 13.375 C 12.609375 13.019531 12.8125 12.707031 13.078125 12.433594 C 13.34375 12.164062 13.648438 11.953125 13.992188 11.804688 C 14.339844 11.65625 14.699219 11.585938 15.074219 11.585938 C 15.445312 11.585938 15.804688 11.65625 16.152344 11.804688 C 16.496094 11.953125 16.804688 12.164062 17.066406 12.433594 C 17.332031 12.707031 17.535156 13.019531 17.679688 13.375 C 17.820312 13.730469 17.894531 14.101562 17.894531 14.488281 Z M 17.894531 14.488281 " fill-opacity="1" fill-rule="nonzero"/><path fill="rgb(93.328857%, 93.328857%, 93.328857%)" d="M 17.1875 14.488281 C 17.1875 14.777344 17.136719 15.054688 17.027344 15.320312 C 16.921875 15.585938 16.765625 15.824219 16.570312 16.027344 C 16.371094 16.230469 16.140625 16.390625 15.882812 16.5 C 15.621094 16.609375 15.351562 16.664062 15.074219 16.664062 C 14.792969 16.664062 14.523438 16.609375 14.261719 16.5 C 14.003906 16.390625 13.773438 16.230469 13.578125 16.027344 C 13.378906 15.824219 13.226562 15.585938 13.117188 15.320312 C 13.011719 15.054688 12.957031 14.777344 12.957031 14.488281 C 12.957031 14.199219 13.011719 13.921875 13.117188 13.65625 C 13.226562 13.386719 13.378906 13.152344 13.578125 12.949219 C 13.773438 12.742188 14.003906 12.585938 14.261719 12.476562 C 14.523438 12.367188 14.792969 12.308594 15.074219 12.308594 C 15.351562 12.308594 15.621094 12.367188 15.882812 12.476562 C 16.140625 12.585938 16.371094 12.742188 16.570312 12.949219 C 16.765625 13.152344 16.921875 13.386719 17.027344 13.65625 C 17.136719 13.921875 17.1875 14.199219 17.1875 14.488281 Z M 17.1875 14.488281 " fill-opacity="1" fill-rule="nonzero"/><path fill="rgb(39.99939%, 39.99939%, 70.199585%)" d="M 15.074219 12.308594 L 15.175781 13.953125 L 15.882812 12.476562 L 15.367188 14.035156 L 16.570312 12.949219 L 15.511719 14.183594 L 17.027344 13.65625 L 15.589844 14.382812 L 17.1875 14.488281 L 15.589844 14.59375 L 17.027344 15.320312 L 15.511719 14.789062 L 16.570312 16.027344 L 15.367188 14.941406 L 15.882812 16.5 L 15.175781 15.023438 L 15.074219 16.664062 L 14.96875 15.023438 L 14.261719 16.5 L 14.777344 14.941406 L 13.574219 16.027344 L 14.632812 14.789062 L 13.117188 15.320312 L 14.554688 14.59375 L 12.957031 14.488281 L 14.554688 14.382812 L 13.117188 13.65625 L 14.632812 14.183594 L 13.574219 12.949219 L 14.777344 14.035156 L 14.261719 12.476562 L 14.96875 13.953125 Z M 15.074219 12.308594 " fill-opacity="1" fill-rule="nonzero"/><path fill="rgb(0%, 0%, 50.19989%)" d="M 15.777344 14.488281 C 15.777344 14.6875 15.707031 14.859375 15.570312 15 C 15.433594 15.140625 15.265625 15.214844 15.074219 15.214844 C 14.878906 15.214844 14.710938 15.140625 14.574219 15 C 14.4375 14.859375 14.367188 14.6875 14.367188 14.488281 C 14.367188 14.289062 14.4375 14.117188 14.574219 13.972656 C 14.710938 13.832031 14.878906 13.761719 15.074219 13.761719 C 15.265625 13.761719 15.433594 13.832031 15.570312 13.972656 C 15.707031 14.117188 15.777344 14.289062 15.777344 14.488281 Z M 15.777344 14.488281 " fill-opacity="1" fill-rule="nonzero"/></svg>
+        <select name="" id="en">
+            <option value="" class="en"> EN </option>
+        </select>
+   </div>
+   <div class="account">
+    <p class="hello">
+        Hello,Daksh
+    </p>
+    <select class="accountdropdownmenu" name="" id="">
+     <option value="" class="accountlist">Accounts & Lists</option>
+    </select>
+   </div>
+<a href="">
+    <div class="return">
+        <p class="returnp">
+         Returns
+        </p>
+        <h3 class="orders">& Orders</h3>
+       </div>
+</a>
+  <a href="#">
+    <div class="cart">
+        <i class="fa-solid fa-cart-shopping carticon " style="color: white;"></i>
+        <h3 class="cartword">Cart</h3>
+       </div>
+  </a>
+  </div>
+  <div class="nav-barleft-2">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void()" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#"><h1>Hello, Daksh</h1></a>
+        <a href="#">Your orders</a>
+        <a href="#">Help and Contact</a>
+        <a href="#">Your Account</a>
+      </div>
+      
+      
+     <div class="all2">
+        <span style="font-size:25px;cursor:pointer;color: white;" onclick="openNav()">&#9776; All</span>
+     </div>
+     <div class="todays">
+        <p class="todaysdeal" style="color: white;">Today's Deal</p>
+      </div>
+      <div class="custom">
+        <p class="todaysdeal" style="color: white;">Custom Services</p>
+      </div>
+      <div class="registory">
+        <p class="todaysdeal" style="color: white;">Registory</p>
+      </div>
+      <div class="Gift">
+        <p class="todaysdeal" style="color: white;">Gift Cards</p>
+      </div>
+      <div class="sale">
+        <p class="todaysdeal" style="color: white;">Sell</p>
+      </div>
+      <div class="shop">
+        <h3 style="font-size: medium;">
+            Shop deals in Electronics
+        </h3>
+      </div>
+  </div>
+ 
+    </header>
+    
+    <div class="hero">
+<div class="button">
+  <div class="button-left" onclick="hero()">
+    <svg width="50px" height="80px" viewBox="0 -6.5 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+      <title>left-arrow</title>
+      <desc>Created with Sketch.</desc>
+      <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="ui-gambling-website-lined-icnos-casinoshunter" transform="translate(-342.000000, -159.000000)" fill="#252528" fill-rule="nonzero">
+              <g id="square-filled" transform="translate(50.000000, 120.000000)">
+                  <path d="M317.108012,39.2902857 L327.649804,49.7417043 L327.708994,49.7959169 C327.889141,49.9745543 327.986143,50.2044182 328,50.4382227 L328,50.5617773 C327.986143,50.7955818 327.889141,51.0254457 327.708994,51.2040831 L327.6571,51.2479803 L317.108012,61.7097143 C316.717694,62.0967619 316.084865,62.0967619 315.694547,61.7097143 C315.30423,61.3226668 315.30423,60.6951387 315.694547,60.3080911 L324.702666,51.3738496 L292.99947,51.3746291 C292.447478,51.3746291 292,50.9308997 292,50.3835318 C292,49.8361639 292.447478,49.3924345 292.99947,49.3924345 L324.46779,49.3916551 L315.694547,40.6919089 C315.30423,40.3048613 315.30423,39.6773332 315.694547,39.2902857 C316.084865,38.9032381 316.717694,38.9032381 317.108012,39.2902857 Z M327.115357,50.382693 L316.401279,61.0089027 L327.002151,50.5002046 L327.002252,50.4963719 L326.943142,50.442585 L326.882737,50.382693 L327.115357,50.382693 Z" id="left-arrow" transform="translate(310.000000, 50.500000) scale(-1, 1) translate(-310.000000, -50.500000) ">
+  
+  </path>
+              </g>
+          </g>
+      </g>
+  </svg>
+  </div>
+
+
+  <div class="button-right"  onclick="hero()">
+    <svg height="80px" style="margin-left:0px ;" width="50px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+viewBox="0 0 227.096 227.096" xml:space="preserve">
+<g>
+<g>
+<polygon style="fill:#010002;" points="152.835,39.285 146.933,45.183 211.113,109.373 0,109.373 0,117.723 211.124,117.723 
+  146.933,181.902 152.835,187.811 227.096,113.55 		"/>
+</g>
+</g>
+</svg>
+  </div>
+</div>
+      
+      <div class="subhero">
+        <p style="color: black;text-align: center; font-size: 15px;">You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. Click here to go to <a style="color: blue;" href="https://www.amazon.in/"> amazon.in</a></p>
+    </div>
+    </div>
+    <div class="carddiv">
+      <div class="cards">
+        <div class="subcards">
+          <div class="headingdiv">
+            <h3 class="heading">Refresh your space</h3>
+          </div>
+          <div class="imagesection">
+   <a href="https://www.amazon.com/s?k=Dinnerware+%26+accessories&crid=IBML6MYDLJ4A&sprefix=dinnerware+%26+accessorie%2Caps%2C190&ref=nb_sb_noss&pf_rd_r=ZCQ2PPZGMJWA9DTCAQVV&pf_rd_p=4b021efd-ffe2-474d-86fe-aea1d170c9ca&pd_rd_r=680cd4a3-1ead-4bf9-9bbc-d6466c3390b6&pd_rd_w=7CzEP&pd_rd_wg=wyW5x&ref_=pd_gw_unk">
+    <div>
+      <img src="images/box1_image.jpg" class="smallboximage"  alt="">
+      <p  class="productname">Dining</p>
+     </div>
+   </a>
+         <a href="https://www.amazon.com/s?k=Dinnerware+%26+accessories&crid=IBML6MYDLJ4A&sprefix=dinnerware+%26+accessorie%2Caps%2C190&ref=nb_sb_noss&pf_rd_r=ZCQ2PPZGMJWA9DTCAQVV&pf_rd_p=4b021efd-ffe2-474d-86fe-aea1d170c9ca&pd_rd_r=680cd4a3-1ead-4bf9-9bbc-d6466c3390b6&pd_rd_w=7CzEP&pd_rd_wg=wyW5x&ref_=pd_gw_unk">
+          <div>
+            <img src="images/box2_image.jpg" class="smallboximage"  alt="">
+            <p class="productname">Home</p>
+           </div>
+         </a>
+         <a href="https://www.amazon.com/s?k=Kitchen&i=kitchen-intl-ship&crid=2LRTV3593NEHX&sprefix=kitchen%2Ckitchen-intl-ship%2C202&ref=nb_sb_noss_1&pf_rd_r=ZCQ2PPZGMJWA9DTCAQVV&pf_rd_p=4b021efd-ffe2-474d-86fe-aea1d170c9ca&pd_rd_r=680cd4a3-1ead-4bf9-9bbc-d6466c3390b6&pd_rd_w=7CzEP&pd_rd_wg=wyW5x&ref_=pd_gw_unk">
+          <div>
+            <img src="images/box3_image.jpg" class="smallboximage"  alt="">
+            <p class="productname">Kitchen</p>
+           </div>
+         </a>
+         <a href="https://www.amazon.com/s?k=health+and+beauty&i=beauty-intl-ship&crid=2036DM6EKNYNA&sprefix=health+and+beauty%2Cbeauty-intl-ship%2C173&ref=nb_sb_noss_2&pf_rd_r=ZCQ2PPZGMJWA9DTCAQVV&pf_rd_p=4b021efd-ffe2-474d-86fe-aea1d170c9ca&pd_rd_r=680cd4a3-1ead-4bf9-9bbc-d6466c3390b6&pd_rd_w=7CzEP&pd_rd_wg=wyW5x&ref_=pd_gw_unk">
+          <div>
+            <img src="images/box4_image.jpg" class="smallboximage"  alt="">
+            <p class="productname">Health and Beauty</p>
+           </div>
+         </a>
+          </div>
+          <a href="https://www.amazon.com/gp/goldbox?ref_=nav_cs_gb&deals-widget=%257B%2522version%2522%253A1%252C%2522viewIndex%2522%253A0%252C%2522presetId%2522%253A%2522957D18D8132C0FCBA2EA0F57FEB9A3F8%2522%252C%2522departments%2522%253A%255B%25221055398%2522%255D%252C%2522sorting%2522%253A%2522BY_SCORE%2522%257D&pf_rd_r=ZCQ2PPZGMJWA9DTCAQVV&pf_rd_p=4b021efd-ffe2-474d-86fe-aea1d170c9ca&pd_rd_r=680cd4a3-1ead-4bf9-9bbc-d6466c3390b6&pd_rd_w=7CzEP&pd_rd_wg=wyW5x" style="text-decoration: none; color: rgb(21, 74, 190); margin-top: 10px;"  class="site">See More</a>
+        </div>
+        <div class="subcards">
+          <div class="headingdiv">
+            <h2 class="heading">Computers & Accessories</h2> 
+          </div>
+<a href="https://www.amazon.com/b?node=16225007011&pf_rd_r=ZCQ2PPZGMJWA9DTCAQVV&pf_rd_p=6b30eb15-a900-4294-9772-db8876444356&pd_rd_r=680cd4a3-1ead-4bf9-9bbc-d6466c3390b6&pd_rd_w=MbaTW&pd_rd_wg=wyW5x&ref_=pd_gw_unk">
+  <div class="imagesection one">
+  </div>
+</a>
+<a href="https://www.amazon.com/b?node=16225007011&pf_rd_r=ZCQ2PPZGMJWA9DTCAQVV&pf_rd_p=6b30eb15-a900-4294-9772-db8876444356&pd_rd_r=680cd4a3-1ead-4bf9-9bbc-d6466c3390b6&pd_rd_w=MbaTW&pd_rd_wg=wyW5x&ref_=pd_gw_unk" style="text-decoration: none; color: rgb(21, 74, 190); margin-top: 10px;"  class="site">Shop now</a>
+        </div>
+        <div class="subcards">
+          <div class="headingdiv">
+            <h2 class="heading">Fashion trends you like</h2>
+          </div>
+          <div class="imagesection">
+            <a href="https://www.amazon.com/s?k=Dresses&crid=1PW0S93CC85GY&sprefix=dresses%2Caps%2C146&ref=nb_sb_noss_1&pf_rd_r=ZCQ2PPZGMJWA9DTCAQVV&pf_rd_p=0033b16a-ef9c-4f2b-9d5e-ec6e0a462018&pd_rd_r=680cd4a3-1ead-4bf9-9bbc-d6466c3390b6&pd_rd_w=9ZRMO&pd_rd_wg=wyW5x&ref_=pd_gw_unk">
+              <div>
+                <img src="images/box6_image.jpg" class="smallboximage"  alt="">
+                <p class="productname">Dresses</p>
+               </div>
+            </a>
+           <a href="https://www.amazon.com/s?k=Knits+clothing&crid=23OTKP0I0AQDD&sprefix=knits+clothing%2Caps%2C147&ref=nb_sb_noss_2&pf_rd_r=ZCQ2PPZGMJWA9DTCAQVV&pf_rd_p=0033b16a-ef9c-4f2b-9d5e-ec6e0a462018&pd_rd_r=680cd4a3-1ead-4bf9-9bbc-d6466c3390b6&pd_rd_w=9ZRMO&pd_rd_wg=wyW5x&ref_=pd_gw_unk">
+            <div>
+              <img src="images/box7_image.jpg" class="smallboximage"  alt="">
+              <p class="productname">Knits</p>
+             </div>
+           </a>
+            <a href="https://www.amazon.com/s?k=Spring+Jackets&crid=28AAZ2JDZCYX1&sprefix=spring+jackets%2Caps%2C140&ref=nb_sb_noss_1&pf_rd_r=ZCQ2PPZGMJWA9DTCAQVV&pf_rd_p=0033b16a-ef9c-4f2b-9d5e-ec6e0a462018&pd_rd_r=680cd4a3-1ead-4bf9-9bbc-d6466c3390b6&pd_rd_w=9ZRMO&pd_rd_wg=wyW5x&ref_=pd_gw_unk">
+              <div>
+                <img src="images/box8_image.jpg" class="smallboximage"  alt="">
+                <p class="productname">Jackets</p>
+               </div>
+            </a>
+           <a href="https://www.amazon.com/s?k=jewelry&crid=3J1F4CEQCXT22&sprefix=jewelry%2Caps%2C152&ref=nb_sb_noss_1&pf_rd_r=ZCQ2PPZGMJWA9DTCAQVV&pf_rd_p=0033b16a-ef9c-4f2b-9d5e-ec6e0a462018&pd_rd_r=680cd4a3-1ead-4bf9-9bbc-d6466c3390b6&pd_rd_w=9ZRMO&pd_rd_wg=wyW5x&ref_=pd_gw_unk">
+            <div>
+              <img src="images/box9_image.jpg" class="smallboximage"  alt="">
+              <p class="productname">Jewelry</p>
+             </div>
+           </a>
+          </div>
+          <a href="https://www.amazon.com/s?k=Trending+fashion&crid=2787SXJYRXDZH&sprefix=trending+fashion%2Caps%2C142&ref=nb_sb_noss_1&pf_rd_r=ZCQ2PPZGMJWA9DTCAQVV&pf_rd_p=0033b16a-ef9c-4f2b-9d5e-ec6e0a462018&pd_rd_r=680cd4a3-1ead-4bf9-9bbc-d6466c3390b6&pd_rd_w=9ZRMO&pd_rd_wg=wyW5x&ref_=pd_gw_unk" style="text-decoration: none; color: rgb(21, 74, 190); margin-top: 10px;" class="site" >Explore more</a>
+        </div>
+        <div class="subcards">
+          <div class="headingdiv">
+            <h2 class="heading">Health & Personal Care</h2>
+           <a href="https://www.amazon.com/s?i=specialty-aps&bbn=16225006011&rh=n%3A%2116225006011%2Cn%3A3777891&ref=nav_em__nav_desktop_sa_intl_personal_care_0_2_11_9&pf_rd_r=ZCQ2PPZGMJWA9DTCAQVV&pf_rd_p=619b2b85-1519-44b0-b10f-193bd022e08c&pd_rd_r=680cd4a3-1ead-4bf9-9bbc-d6466c3390b6&pd_rd_w=IVB8E&pd_rd_wg=wyW5x&ref_=pd_gw_unk">
+            <div class="imagesection two">
+            </div>
+           </a>
+           
+          </div>
+          <a href="https://www.amazon.com/s?i=specialty-aps&bbn=16225006011&rh=n%3A%2116225006011%2Cn%3A3777891&ref=nav_em__nav_desktop_sa_intl_personal_care_0_2_11_9&pf_rd_r=ZCQ2PPZGMJWA9DTCAQVV&pf_rd_p=619b2b85-1519-44b0-b10f-193bd022e08c&pd_rd_r=680cd4a3-1ead-4bf9-9bbc-d6466c3390b6&pd_rd_w=IVB8E&pd_rd_wg=wyW5x&ref_=pd_gw_unk" style="text-decoration: none; color: rgb(21, 74, 190); margin-top: 10px;" class="site" >Shop Now</a>
+        </div>
+    
+      </div>
+     </div>
+  
+ <div onclick="topFunction()" class="back" >
+  <h4 style="text-align: center; padding: 10px;">Back to Top</h4>
+ </div>
+ <div class="footer">
+  <div class="subfooter">
+  <h1 style="color:white">Get to Know Us</h1>
+  <div class="p">
+    <p class="realp">Careers</p>
+    <p class="realp">Blog</p>
+    <p class="realp">About Amazon</p>
+    <p class="realp">Investor Relations</p>
+    <p class="realp">Amazon Devices</p>
+  </div>
+  </div>
+  <div class="subfooter">
+    <h1 style="color:white">Make Money with Us</h1>
+      <div class="p">
+        <p class="realp">Sell products on Amazon</p>
+        <p class="realp">Sell on Amazon Business</p>
+        <p class="realp">Sell apps on Amazon</p>
+        <p class="realp">Become an Affiliate</p>
+        <p class="realp">Advertise Your Products</p>
+        <p class="realp">Self-Publish with Us</p>
+        <p class="realp">Host an Amazon Hub</p>
+      </div>
+  </div>
+ <div class="subfooter">
+  <h1 style="color:white">Amazon Payment Products</h1>
+    <div class="p">
+      <p class="realp">Amazon Business Card</p>
+      <p class="realp">Shop with Points</p>
+      <p class="realp">Reload Your Balance</p>
+      <p class="realp">Amazon Currency Converter</p>
+      
+    </div>
+ </div>
+ <div class="subfooter">
+  <h1 style="color:white">Let Us Help You</h1>
+    <div class="p">
+      <p class="realp">Amazon and COVID-19  </p>
+      <p class="realp">Your Account</p>
+      <p class="realp">Your Orders</p>
+      <p class="realp">Shipping Rates & Policies</p>
+      <p class="realp">Returns & Replacements</p>
+      <p class="realp">Manage Your Content and Devices</p>
+      <p class="realp">Help</p>
+    
+    </div>
+   
+ </div>
+ </div>
+ 
+    <script src="index.js"></script>
+</body>
+</html>
